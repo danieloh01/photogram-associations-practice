@@ -15,6 +15,9 @@
 class Photo < ApplicationRecord
   validates(:poster, { :presence => true })
 
+  # has_many(:comments, { :class_name => "Comment", :foreign_key => "photo_id" })
+
+
   # Association accessor methods to define:
   
   ## Direct associations
